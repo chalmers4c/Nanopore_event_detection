@@ -40,8 +40,8 @@ Next-Generation Nanopore Sensors Based on Conductive Pulse Sensing for Enhanced 
 # File Input
 By default it is to use with .abf file (Molecular Devices). However the downstream processing does not rely on .abf file as the pyabf packages will read and then convert into arrays of time and current datapoints, thus, with other means of data conversion, one can load two arrays of data points then use this script for analysis.
 
-# Files Output
-  - Excel file for all the detected events, with the following column outputs:
+# Data Output
+  - Excel file for all the detected events, with the following column outputs (Example trace.xlsx; attached):
     - Event count (from 1)
     - Event positions (raw)
     - Event positions (in seconds after adjustment with sampling frequency)
@@ -52,7 +52,7 @@ By default it is to use with .abf file (Molecular Devices). However the downstre
     - Event area (pA⋅ms and nA⋅ms, in terms of Area under the curve, through summation of all the events height across a defined time within the boundary defined by the event Start and event End (i.e. integration))
 
 
-# Examples
+# Figure Output
 The script will output the following figure for the users and save it the .abf file location in the computer.
 
 Figure 1: Baseline Statistics-sensitive Non-linear Iterative Peak-clipping (SNIP) fitting 
